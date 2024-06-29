@@ -1,0 +1,39 @@
+<!-- 
+File: index.html
+Gui Assignment: Scrabble with drag and drop
+Description: This file is responsible for the jQuery Ui into the game.  It also links together the css and the javascript code to the html file
+and it also responsibole for the different sections of the code.  There is the tile rack, the scrabble board itself, the calculate button section and 
+also the button that gives the user new buttons.  Letter tiles will dynamically be added in the tile rack.   
+
+
+Zuriel Pagan, UMass Lowell Computer Science, zuriel_pagan@student.uml.edu
+Copywright (c) 2024 by Zuriel.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author.
+
+updated by ZP on June 19th, 2024
+updated by ZP on June 23rd, 2024
+updated by ZP on June 27th, 2024
+updated by ZP on June 28th, 2024
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrabble</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <!--This is where the tile rack will be and will hold the tiles-->
+    <div id="tile-rack">
+        <!-- This is where the tiles will go and this board will have spaces with double point spots-->
+    </div>
+    <div id="scrabble-board">
+    </div>
+          <!-- This is where the user can click on the button to either get new tiles or calculate the score -->
+    <button id="deal-button">Deal New Tiles</button>
+    <button id="calculate-score">Calculate Score</button>
+    <div id="score">Score: 0</div>
+</body>
+</html>

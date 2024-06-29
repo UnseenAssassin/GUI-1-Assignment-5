@@ -1,0 +1,81 @@
+/* File: style.css
+Gui Assignment: Scrabble with drag and drop
+Description: This file is responsible for the tiles, the tile holder and the tile board for the scrabble game.  It is responsible for the size,
+shape, and the dimensions of those objects.  This file also centeres everything and makes everything neat so the user can clearly see
+where they are able to place the tile and see their score based on the word they have out down.  
+
+
+Zuriel Pagan, UMass Lowell Computer Science, zuriel_pagan@student.uml.edu
+Copywright (c) 2024 by Zuriel.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author.
+
+updated by ZP on June 19th, 2024
+updated by ZP on June 23rd, 2024
+updated by ZP on June 27th, 2024
+updated by ZP on June 28th, 2024
+*/
+body 
+{
+    font-family: Arial, sans-serif;
+    /* This is where the basic backgrounc color resides*/
+    background-color: #f0f8ff; 
+}
+
+#tile-rack 
+{
+    background-image: url('graphics/scrabble-tile-holder-406774_640.png');
+    display: flex;
+    /* This will center the tiles */
+    justify-content: center; 
+    margin: 20px auto; 
+    /* This will Adjust the width to fit 7 tiles with margins */
+    width: 500px; 
+    max-height: max-content;
+    /* Allows positioning of tiles inside */
+    position: relative; 
+}
+ 
+/* This is where any edits will be made for the board itself*/
+#scrabble-board 
+{
+    width: 1050px; 
+    height: 70px; 
+    background-image: url('graphics/Scrabble_Board_OneLine.png');
+    background-size: cover;
+    position: relative;
+    /* Center the board horizontally */
+    margin: 0 auto; 
+}
+/* This is the */
+.tile 
+{
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    position: absolute; /* Position inside the tile rack */
+}
+
+.scrabble-cell 
+{
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 70px;
+    font-size: 24px;
+    position: absolute;
+}
+/* This is where the size of the score will be in the center of the screen*/
+#score 
+{
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center; 
+}
